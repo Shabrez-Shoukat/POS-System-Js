@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- META -->
+    <title>JS POS Experiment</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Experimental JS POS System">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+
+    <!-- ICONS -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="white">
+    <link rel="apple-touch-icon" href="images/icon-512.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="JS POS">
+    <meta name="msapplication-TileImage" content="images/icon-512.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- MANIFEST + SERVICE WORKER -->
+    <link rel="manifest" href="manifest.json">
+    <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("worker.js");
+    }
+    </script>
+
+    <!-- POS CSS + JS -->
+    <link rel="stylesheet" href="JS-POS.css"/>
+    <script src="JS-POS.js"></script>
+  </head>
+  <body>
+    <!-- (A) PRODUCTS LIST -->
+    <div id="poslist"></div>
+
+    <!-- (B) CART -->
+    <div id="poscart"></div>
+
+    <!-- (C) NINJA RECEIPT -->
+    <div id="posreceipt"></div>
+  </body>
+</html>

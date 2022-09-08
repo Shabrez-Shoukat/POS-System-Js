@@ -1,0 +1,18 @@
+{
+  "short_name": "JS POS",
+  "name": "JS POS",
+  "icons": [{
+     "src": "images/favicon.png",
+     "sizes": "64x64",
+     "type": "image/png"
+  }, {
+    "src": "images/icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "start_url": "JS-POS.html",
+  "scope": "/",
+  "background_color": "white",
+  "theme_color": "white",
+  "display": "standalone"
+}
